@@ -11,10 +11,10 @@ app.use(cors({
 
 app.use(express.json());
 
-// app.get("/", (req, res) => {
-//   console.log(req.method);
-//   res.send("Hello Users!");
-// });
+ app.get("/", (req, res) => {
+  console.log(req.method);
+  res.send("Hello Users!");
+ });
 
 app.use('/api/v3.2/contact', require('./router/contact.router'))
 
