@@ -13,7 +13,7 @@ function Contact() {
 
     try {
       const res = await fetch(
-        `http://localhost:8000/api/v3.2/contact/message`,
+        `https://contactus-2-27ji.onrender.com`,
         {
           method: "POST",
           headers: {
